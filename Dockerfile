@@ -1,13 +1,13 @@
 FROM debian:stretch-slim
-LABEL maintainer="Phil Hawthorne <me@philhawthorne.com>"
+LABEL maintainer="Anirudh Warrier <me@anirudhwarrier.com>"
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV LANG C.UTF-8
 
 # Default versions
-ENV INFLUXDB_VERSION=1.7.10
-ENV CHRONOGRAF_VERSION=1.7.17
-ENV GRAFANA_VERSION=6.5.3
+ENV INFLUXDB_VERSION=1.8.0
+ENV CHRONOGRAF_VERSION=1.8.4
+ENV GRAFANA_VERSION=7.1.5
 
 # Grafana database type
 ENV GF_DATABASE_TYPE=sqlite3
