@@ -1,10 +1,8 @@
 # Docker Image with InfluxDB and Grafana
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/philhawthorne/docker-influxdb-grafana.svg)](https://dockerhub.com/philhawthorne/docker-influxdb-grafana) [![license](https://img.shields.io/github/license/philhawthorne/docker-influxdb-grafana.svg)](https://dockerhub.com/philhawthorne/docker-influxdb-grafana)
+[![Docker Pulls](https://img.shields.io/docker/pulls/anirudhwarrier/docker-influxdb-grafana.svg)](https://dockerhub.com/anirudhwarrier/docker-influxdb-grafana) [![license](https://img.shields.io/github/license/anirudhwarrier/docker-influxdb-grafana.svg)](https://dockerhub.com/anirudhwarrier/docker-influxdb-grafana)
 
 ![Grafana][grafana-version] ![Influx][influx-version] ![Chronograf][chronograf-version]
-
-[![Buy me a coffee][buymeacoffee-icon]][buymeacoffee]
 
 
 This is a Docker image based on the awesome [Docker Image with Telegraf (StatsD), InfluxDB and Grafana](https://github.com/samuelebistoletti/docker-statsd-influxdb-grafana) from [Samuele Bistoletti](https://github.com/samuelebistoletti).
@@ -21,7 +19,7 @@ The main purpose of this image is to be used to show data from a [Home Assistant
 |--------------|---------|
 | InfluxDB     | 1.8.0   |
 | ChronoGraf   | 1.8.4   |
-| Grafana      | 6.7.4   |
+| Grafana      | 7.1.5   |
 
 ## Quick Start
 
@@ -35,7 +33,7 @@ docker run -d \
   -p 8086:8086 \
   -v /path/for/influxdb:/var/lib/influxdb \
   -v /path/for/grafana:/var/lib/grafana \
-  philhawthorne/docker-influxdb-grafana:latest
+  anirudhwarrier/docker-influxdb-grafana:edge
 ```
 
 To stop the container launch:
@@ -103,9 +101,6 @@ Port: 8086
 1. Establish a ssh connection with the container
 2. Launch `influx` to open InfluxDB Shell (CLI)
 
-[buymeacoffee-icon]: https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-2.svg
-[buymeacoffee]: https://www.buymeacoffee.com/philhawthorne
-
-[grafana-version]: https://img.shields.io/badge/Grafana-6.7.4-brightgreen
+[grafana-version]: https://img.shields.io/badge/Grafana-7.1.5-brightgreen
 [influx-version]: https://img.shields.io/badge/Influx-1.8.0-brightgreen
 [chronograf-version]: https://img.shields.io/badge/Chronograf-1.8.4-brightgreen
